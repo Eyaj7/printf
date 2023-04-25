@@ -3,7 +3,7 @@
  * _printf - A variadic function to return the length of
  * a string.
  * @format: format of the argument.
- * 
+ *
  * Return: the length of the arguments.
  */
 
