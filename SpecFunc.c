@@ -25,7 +25,7 @@ int p_string(char *str)
 }
 
 /**
- * specifier - A function to detect which specifier we should use.
+ * SpecFunc - A function to detect which specifier we should use.
  * @a: the specifier
  * @args: the arguments
  *
@@ -43,6 +43,10 @@ int SpecFunc(char a, va_list args)
 		str = va_arg(args, char *);
 		len += p_string(STRING);
 	}
+else if (a == '%')
+{
+len += p_char('%');
+}
 	else
 	{
 		len += p_char('%');
