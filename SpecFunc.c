@@ -44,7 +44,7 @@ int SpecFunc(char a, va_list args)
 		len += p_string(STRING);
 	}
     else if (a == '%')
-		len += p_char('%');
+        len += p_char('%');
 	else
 	{
 		len += p_char('%');
