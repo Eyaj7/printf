@@ -35,7 +35,7 @@ int num_len(int n)
 int len = 0;
 while (n / 10 != 0)
 {
-len ++;
+len++;
 n /= 10;
 }
 return (len);
