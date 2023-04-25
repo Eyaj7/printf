@@ -25,6 +25,23 @@ int p_string(char *str)
 }
 
 /**
+* num_len - function
+*@n: int
+*Return: Always(0)
+*/
+
+int num_len(int n)
+{
+int len = 0;
+while (n / 10 != 0)
+{
+len ++;
+n /= 10;
+}
+return (len);
+}
+
+/**
  * SpecFunc - A function to detect which specifier we should use.
  * @a: the specifier
  * @args: the arguments
@@ -42,6 +59,10 @@ int SpecFunc(char a, va_list args)
 	{
 		str = va_arg(args, char *);
 		len += p_string(STRING);
+	}
+	else if (a == 'i' || a == 'd')
+	{
+		len += num_len(va_arg(args, int));
 	}
 else if (a == '%')
 {
