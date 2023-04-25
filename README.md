@@ -18,7 +18,7 @@
 
  - main.c contains all the necessary unit tests.
 
- - use the function name **_printf** with the correct specifier.
+ - use the function name *_printf* with the correct specifier.
 ```
 
 ### File structures:
