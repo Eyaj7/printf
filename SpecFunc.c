@@ -25,7 +25,7 @@ int p_string(char *str)
 }
 
 /**
- * specifier - A function to detect which specifier we should use.
+ * SpecFunc - A function to detect which specifier we should use.
  * @a: the specifier
  * @args: the arguments
  *
