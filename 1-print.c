@@ -60,14 +60,8 @@ int SpecFunc(char a, va_list args)
 		str = va_arg(args, char *);
 		len += p_string(STRING);
 	}
-	else if (a == 'i')
-	{	
+	else if (a == 'i' || a == 'd')
 		len += num_len(va_arg(args, int));
-	}
-	else if (a == 'd')
-	{
-		len += num_len(va_arg(args, int));
-	}
 else if (a == '%')
 {
 len += p_char('%');
